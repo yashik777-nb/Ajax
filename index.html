@@ -22,14 +22,20 @@
       <form action="#">
         <div>
           <label for="number">Number Of Jokes</label>
-          <input type="number" name="number" id="number" />
+          <input
+            type="number"
+            name="number"
+            id="number"
+            placeholder="Default value: 1 for <=0"
+          />
         </div>
         <div>
           <button id="button-jokes">Get Jokes</button>
         </div>
       </form>
       <ul class="jokes"></ul>
+      <!-- Callbacks -->
     </div>
-    <script src="03_externalAPI.js"></script>
+    <script src="05_customHTTPLibrary.js"></script>
   </body>
 </html>
