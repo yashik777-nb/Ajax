@@ -9,7 +9,7 @@ function loaddata() {
 
   //   console.log("READYSTATE", xhr.readyState);
 
-  // Used for Spiiners/Loaders
+  // Used for Spinners/Loaders
   xhr.onprogress = function () {
     console.log("READYSTATE", xhr.readyState);
   };
