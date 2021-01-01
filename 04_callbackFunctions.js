@@ -3,7 +3,7 @@ const posts = [
   { title: "Post Two", body: "This is Post Two" },
 ];
 
-// In a synchronous Way
+//In a synchronous Way
 
 // function createPosts(post) {
 //   setTimeout(function () {
@@ -42,6 +42,8 @@ const posts = [
 //     document.body.innerHTML = output;
 //   }, 1000);
 // }
+
+// createPosts({ title: "Post Three", body: "This Post Three" }, getPosts);
 
 // Using Promises
 function createPosts(post) {

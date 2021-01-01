@@ -9,7 +9,7 @@ EasyHttp.prototype.get = function (url, callback) {
   this.http.onload = function () {
     if (that.status === 200) {
       // console.log(that.responseText);
-      callback(null, that.responseText);
+      callback(false, that.responseText);
     } else {
       callback(`Error: ${that.status}`);
     }

@@ -2,7 +2,7 @@ document.getElementById("button-jokes").addEventListener("click", getJokes);
 
 function getJokes(e) {
   const number =
-      document.querySelector('input[type="number"]').value > 0
+      document.querySelector('input[type="number"]').value > 1
         ? document.querySelector('input[type="number"]').value
         : 1,
     url = `http://api.icndb.com/jokes/random/${number}`;

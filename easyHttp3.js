@@ -2,8 +2,12 @@ class EasyHttp {
   // Make a HTTP GET Request
   async get(url) {
     const response = await fetch(url);
-    const resData = await response.json();
-    return resData;
+    if (response.status == 200) {
+      const resData = await response.json();
+      return resData;
+    } else {
+      return Promise.reject("Error");
+    }
   }
 
   // Make a HTTP POST Request

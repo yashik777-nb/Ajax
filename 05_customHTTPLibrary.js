@@ -12,22 +12,22 @@ const updateDate = {
 };
 
 // Get Posts
-// http.get("https://jsonplaceholder.typicode.com/posts", function (
-//   error,
-//   response
-// ) {
-//   if (error) console.log(error);
-//   else console.log(response);
-// });
+// http.get(
+//   "https://jsonplaceholder.typicode.com/posts",
+//   function (error, response) {
+//     if (error) console.log(error);
+//     else console.log(response);
+//   }
+// );
 
 // // Get Single Post
-// http.get("https://jsonplaceholder.typicode.com/posts/1", function (
-//   error,
-//   response
-// ) {
-//   if (error) console.log(error);
-//   else console.log(response);
-// });
+// http.get(
+//   "https://jsonplaceholder.typicode.com/posts/1",
+//   function (error, response) {
+//     if (error) console.log(error);
+//     else console.log(response);
+//   }
+// );
 
 // // Create Post
 // http.post("https://jsonplaceholder.typicode.com/posts", createData, function (
@@ -48,10 +48,16 @@ const updateDate = {
 // });
 
 // Delete Post
-http.delete("https://jsonplaceholder.typicode.com/posts/1", function (
-  error,
-  response
-) {
-  if (error) console.log(error);
-  else console.log(response);
-});
+// http.delete(
+//   "https://jsonplaceholder.typicode.com/posts/1",
+//   function (error, response) {
+//     if (error) console.log(error);
+//     else console.log(response);
+//   }
+// );
+
+// Get Posts.
+http
+  .get("https://jsonplaceholder.typicode.com/posts")
+  .then((res) => console.log(res))
+  .catch((err) => console.log(err));
